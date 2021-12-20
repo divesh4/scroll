@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+      body{
+          margin: 0;
+      }
+        button{
+            width: 120px; height: 40px;
+            border: none;
+            border-radius: 20px;
+            color: rgb(63, 63, 63);
+            font-size: 15px;
+            border: 2px solid white;
+            background-color: white;
+        
+            
+        }
+        button:hover{
+            background-color: transparent;
+            color: rgb(255, 255, 255);
+            border: 2px solid white;
+        }
+
+           
+        
+        #small{
+            height: 100%;
+            
+        }
+        #bk{
+           display: flex;
+           justify-content: center;
+            overflow: hidden;
+            height: 600px;
+        }
+        h1{
+            font-size: 50px; position: absolute;
+            top: 255px;
+            font-family: 'Russo One', sans-serif;
+         left: 35px;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+        }
+        h3{ position: absolute;
+         left: 55px;
+         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+            top: 330px;
+            color: rgb(255, 255, 255);
+            font-weight: bold; 
+        }
+        .arrange1{
+            position: absolute;
+            top: 420px;
+            
+        }
+ .container{
+     margin: 50px 30px;
+     position: relative;
+     top: 0;
+     
+ }
+ p{
+     color: rgb(107, 107, 107);
+ }
+ #blue{
+     background-color: rgb(77, 157, 172);
+     position: absolute;
+     top: 570px;
+     height: 78px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     width: 100%;
+     color: rgba(255, 255, 255, 0.829);text-align: center;
+ }
+    </style>
+</head>
+<body>
+   
+        <div id="bk">
+            <div id="blue">
+<h2>your paragraph heading</h2>
+            </div>
+            <h1>Your Text</h1>
+    <h3>your title descripton here djdjd </h3>
+
+            <button class="arrange1">click me</button>
+<img src="back1.jpg" alt="error" id="small">
+    </div>
+     <!-- <img src="c1.jpg" alt="error" id="small"> -->
+     <!-- <img src="c2.jpg" alt="error" id="large"> -->
+    <div class="container">
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, libero! Aperiam, voluptatum deserunt facere delectus quisquam dignissimos sequi esse tempora accusamus, dolores, repellat soluta tempore? Aliquam, amet iure consequatur, praesentium doloribus sapiente perspiciatis labore magni aperiam nesciunt est, quos facilis ullam officiis aspernatur modi exercitationem qui ut fugit reiciendis autem nisi! Ex inventore quis commodi sunt ad maiores quos doloremque quasi voluptatum, explicabo earum aliquam rem, exercitationem numquam voluptatem culpa dolores voluptates corporis maxime quibusdam nemo dolorum dolore? Consectetur, cumque, provident ipsa adipisci repudiandae in dolores, recusandae aliquam labore tempora error fuga hic? Architecto sunt fugiat ratione quidem consectetur corporis molestias odit, labore similique sit repellendus cumque deleniti, voluptatum veniam possimus suscipit, dignissimos recusandae quisquam eius illum hic! Nihil fugiat cumque impedit, temporibus eaque repudiandae harum quos iure! Quibusdam ipsam sit illum maiores cupiditate id repudiandae, dolor quidem at, excepturi incidunt blanditiis assumenda provident a doloribus atque deserunt quos reiciendis nulla quas dignissimos numquam corrupti? Earum sunt tenetur ipsam magni nobis. Deserunt repudiandae sequi asperiores vitae eaque. Impedit aspernatur mollitia doloribus architecto fugiat ut cupiditate laborum illo aliquam, dolorum dolores dignissimos commodi at sit iste laboriosam quo rem eius doloremque inventore consequatur autem possimus dolore! Nobis eaque ad culpa eveniet!
+    </p>
+    
+</div>
+</body>
+<script>
+    let a = document.getElementsByTagName("h1")[0];
+    let b = document.getElementsByTagName("h3")[0];
+    let c = document.getElementsByTagName("div")[1];
+    window.addEventListener('scroll', function(){
+        let value = window.scrollY;
+        a.style.left = 35+value*0.2 + "px";
+        b.style.left = 55-value*0.1 + "px";
+        c.style.top = 570-value*0.08 + "px";
+    
+     
+       
+
+
+    });
+</script>
+</html> 
